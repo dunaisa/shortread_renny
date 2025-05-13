@@ -10,6 +10,9 @@
     font-weight: 700;
     padding: 0;
     margin: 0 0 10px;
+    @media screen and (max-width: 480px) {
+      font-size: 4.5rem;
+    }
   }
   &__definition {
     font-size: 2.6rem;
@@ -18,12 +21,21 @@
     font-weight: 400;
     padding: 0;
     margin: 0 0 20px;
+    @media screen and (max-width: 480px) {
+      font-size: 3rem;
+    }
   }
   &__blocks-wrapper {
     display: flex;
     flex-direction: column;
     width: 100%;
     gap: 40px;
+    @media screen and (max-width: 960px) {
+      gap: 30px;
+    }
+    @media screen and (max-width: 425px) {
+      gap: 20px;
+    }
   }
   &__block {
     background-color: #0C8C8E;
@@ -37,34 +49,56 @@
       gap: 20px;
       display: flex;
       flex-direction: column;
+      @media screen and (max-width: 810px) {
+        border-top-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        gap: 10px;
+      }
     }
     &_advantages {
       flex-wrap: wrap;
       justify-content: space-between;
+      @media screen and (max-width: 1124px) {
+        flex-direction: column;
+        align-items: center;
+      }
     }
     &-img {
-      max-width: 430px;
+      max-width: 43rem;
       width: 100%;
       object-fit: cover;
+      
     }
     &-content {
       max-width: 590px;
+      @media screen and (max-width: 1124px) {
+        max-width: 100%;
+      }
     }
   }
   &__description {
     display: flex;
     gap: 20px;
     align-items: center;
+    @media screen and (max-width: 480px) {
+      gap: 10px;
+    }
     &-img{
       &_efficiency {
-        max-width: 83px;
+        max-width: 8.3rem;
         width: 100%;
         object-fit: cover;
+        @media screen and (max-width: 500px) {
+          max-width: 6.3rem;
+        }
       }
       &_advantages {
-        max-width: 144px;
+        max-width: 14.4rem;
         width: 100%;
         object-fit: cover;
+        @media screen and (max-width: 650px) {
+          max-width: 10rem;
+        }
       }
     }
     &-text {
@@ -74,6 +108,12 @@
       font-weight: 400;
       padding: 0;
       margin: 0;
+      @media screen and (max-width: 650px) {
+        font-size: 16px;
+      }
+      @media screen and (max-width: 425px) {
+        font-size: 14px;
+      }
     }
   }
   &__effect {
@@ -83,6 +123,9 @@
       @media screen and (max-width: 1155px) {
         flex-wrap: wrap;
         justify-content: center;
+      }
+      @media screen and (max-width: 500px) {
+        gap: 10px;
       }
     }
     &-item {
@@ -98,12 +141,12 @@
           margin-right: 10px;
         }
       }
-      // @media screen and (max-width: 895px) {
-      //  width: 100%;
-      // }
+      @media screen and (max-width: 500px) {
+        border-radius: 15px;
+      }
     }
     &-img {
-      width: 62px;
+      width: 6.2rem;
       object-fit: cover;
     }
     &-text {
@@ -112,6 +155,12 @@
       color: #FFFFFF;
       font-weight: 400;
       margin: 0 5px 0 0;
+      @media screen and (max-width: 650px) {
+        font-size: 16px;
+      }
+      @media screen and (max-width: 425px) {
+        font-size: 14px;
+      }
     }
   }
   &-list__text {
@@ -128,6 +177,12 @@
       align-items: flex-start;
       gap: 15px;
       margin-top: 20px;
+      @media screen and (max-width: 500px) {
+        margin-bottom: 20px;
+      }
+      @media screen and (max-width: 425px) {
+        gap: 5px;
+      }
     }
     &-item {
       display: flex;
@@ -135,8 +190,11 @@
       gap: 15px;
     }
     &-img {
-      width: 50px;
+      width: 5rem;
       object-fit: cover;
+      @media screen and (max-width: 768px) {
+        width: 4rem;
+      }
     }
     &-text {
       span {
