@@ -39,6 +39,7 @@
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
     width: 100%;
+    box-sizing: border-box;
     &-content {
       display: flex;
       flex-direction: column;
@@ -47,7 +48,7 @@
       max-width: 506px;
     }
     &-graph {
-      max-width: 563px;
+      max-width: 558px;
       object-fit: contain;
       padding: 0 20px;
       border-top-left-radius: 60px;

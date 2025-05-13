@@ -1,0 +1,136 @@
+.rennie-about {
+  display: flex;
+  align-items: flex-start;
+  background-color: #DA1828;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  padding: 20px;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__logo {
+    max-width: 252px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  &__text {
+    font-size: 2rem;
+    line-height: 120%;
+    color: #ffffff;
+    font-weight: 400;
+    padding: 0;
+    margin: 0 0 30px;
+    &_arrow {
+      padding-left: 40px;
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 5px;
+        width: 29px;
+        height: 15px;
+        background-image: url(../images/arrow.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+  }
+  &__product {
+    &-wrapper {
+      max-width: 538px;
+      width: 100%;
+      display: flex;
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 10%;
+        width: 390px;
+        height: 388px;
+        background: rgba(255, 255, 255, 1);
+        filter: blur(80px);
+        z-index: 2;
+      }
+    }
+    &-img {
+      object-fit: cover;
+      width: 100%;
+      z-index: 3;
+      &-dec {
+        position: absolute;
+        left: 0;
+        bottom: 9%;
+        max-width: 300px;
+        width: 100%;
+        object-fit: cover;
+        mix-blend-mode: lighten;
+        z-index: 1;
+      }
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    &:nth-child(1) {
+      & img {
+        width: 43px;
+        object-fit: contain;
+      }
+    }
+    &:nth-child(2) {
+      & img {
+        width: 32px;
+        object-fit: contain;
+      }
+    }
+    &:nth-child(3),
+    &:nth-child(4){
+      & img {
+        width: 41px;
+        object-fit: contain;
+      }
+    }
+    &-img-wrapper {
+      width: 43px;
+    }
+  }
+  &__instruction {
+    &-link {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      margin: 0;
+      padding: 0;
+    }
+    &-img {
+      width: 30px;
+      object-fit: cover;
+    }
+    &-text {
+      text-decoration: underline;
+      font-size: 14px;
+      line-height: 130%;
+      color: #ffffff;
+      font-weight: 400;
+      padding: 0;
+      margin: 0 0 0 8px;
+    }
+  }
+}
